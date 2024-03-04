@@ -1,18 +1,20 @@
 // PASSWORD GENERATOR 
 
 // nome utente password 
-// Sommare 5 al numero che mi da l'utente e stampo in pagina.
 
-// prendo il numero dall'utente
-const userNumber = prompt('Dimmi un numero');
+// prendo il nome dall'utente
+const UserName = prompt('Dimmi il tuo nome');
 
-// convertire in un tipo di dato numero
-let userNumberAsNumeric = parseInt(userNumber);
+// prendo il cognome dall'utente
+const UserSecondName = prompt('Dimmi il tuo cognome');
 
-// Faccio la somma
-let sum = userNumberAsNumeric + 5;
+// prendo il colore prefrito dall'utente
+const UserColorFavourit = prompt('Dimmi il tuo colore preferito');
 
-// Stampo il risultato
-const userMessage = 'Il risultato è ' + sum;
-// alert(userMessage);
-document.getElementById('message').innerHTML = userMessage;
+// numero di default 
+
+const NumberDefault=23;
+
+// password generata 
+const UserMessage = `${UserName}${UserSecondName}${UserColorFavourit}${NumberDefault}`;
+document.getElementById('passwordtitle').innerHTML = UserMessage;
